@@ -1,0 +1,388 @@
+   /*--------------------------------------------------------------------------------------------------------*/
+   /*CAROUSEL DISEÑO*/
+   
+   .carousel,
+   .item,
+   .active {
+       height: 100%;
+   }
+   /*Le damos color transparente-negro a las imagenes de fondo
+   
+   div.item div.fill::before {
+       position: absolute;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       background-color: #222121a6;
+       content: "";
+   }*/
+   
+   .carousel-inner {
+       height: 100%;
+       background: #000;
+   }
+   
+   .carousel-caption {
+       padding-bottom: 80px;
+   }
+   
+   .carousel-caption h2 {
+       font-size: 60px;
+       color: #0077b6;
+       font-weight: 800;
+   }
+   
+   @media (max-width: 574px) {
+       .carousel-caption h2 {
+           font-size: 50px;
+       }
+   }
+   
+   .carousel-caption p {
+       padding: 10px
+   }
+   
+   .fill {
+       width: 100%;
+       height: 100vh;
+       background-position: center;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       background-size: cover;
+       -o-background-size: cover;
+       opacity: 0.6;
+   }
+   /**
+ * Botón "Ver más"
+ */
+   
+   .btn-transparent {
+       background: #091A42;
+       color: rgb(255, 255, 255);
+       --border: 2px solid rgb(67, 204, 209);
+   }
+   
+   .btn-transparent:hover {
+       background: #000;
+       color: #ffff;
+   }
+   
+   .btn-rounded {
+       border-radius: 70px;
+   }
+   
+   .btn-large {
+       padding: 11px 45px;
+       font-size: 18px;
+   }
+   /**
+ * Duración de la animación
+ */
+   
+   .animated {
+       -webkit-animation-duration: 1.5s;
+       animation-duration: 1.5s;
+   }
+   
+   @-webkit-keyframes fadeInRight {
+       from {
+           opacity: 0;
+           -webkit-transform: translate3d(100px, 0, 0);
+           transform: translate3d(100px, 0, 0);
+       }
+       to {
+           opacity: 1;
+           -webkit-transform: none;
+           transform: none;
+       }
+   }
+   
+   @keyframes fadeInRight {
+       from {
+           opacity: 0;
+           -webkit-transform: translate3d(100px, 0, 0);
+           transform: translate3d(100px, 0, 0);
+       }
+       to {
+           opacity: 1;
+           -webkit-transform: none;
+           transform: none;
+       }
+   }
+   
+   .fadeInRight {
+       -webkit-animation-name: fadeInRight;
+       animation-name: fadeInRight;
+   }
+   /*--------------------------------FIN CAROUSEL DISEÑO*---------------------------------------------------/
+   /*------------------------------------------------------------------------------------------------------ */
+   /*-----------------------------------------Inicio cuadritos infor--------------------------------------------------- */
+   
+   .carrou__container {
+       min-height: 100vh;
+       background-color: rgba(246, 247, 249, 255);
+       margin: 0px;
+       padding: 9rem 0;
+   }
+   
+   .infor__contenedores {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+   }
+   
+   ul {
+       list-style: none;
+   }
+   
+   .box__carrou {
+       width: 240px;
+       height: 280px;
+       background-color: #ffffff;
+       border-radius: 20px;
+       box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.4);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .titulo__infor {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-top: 30px;
+       margin-bottom: 35px;
+       font-size: 25px;
+       font-weight: 550;
+       position: relative;
+       top: -50px;
+   }
+   
+   .titulo__infor h1 {
+       color: #091a42;
+       font-size: 55px;
+       letter-spacing: 0px;
+       text-transform: none;
+       font-weight: 800;
+       text-align: center;
+   }
+   
+   .titulo__infor h1 span {
+       color: #0077b6;
+   }
+   
+   .titulo__infor__ {
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       margin-top: 40px;
+       padding-top: 20px;
+       font-size: 16px;
+   }
+   
+   .carrousel__elemento {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 2px 2px 2px 2px;
+   }
+   
+   .imagen__media {
+       border-radius: 20px;
+       width: 200px;
+   }
+   
+   .carrousel__elemento .min__title {
+       color: rgba(78, 126, 255, 255);
+       margin-bottom: 30px;
+       margin-top: 0;
+       font-weight: 600;
+   }
+   
+   .carrousel__elemento .min__title_ {
+       font-weight: 600;
+       margin: 0;
+   }
+   
+   .carrousel__elemento .fas {
+       font-size: 100px;
+       color: rgba(78, 126, 255, 255);
+   }
+   
+   @media (max-width: 767px) {
+       .infor__contenedores {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-around;
+       }
+       .titulo__infor {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+       .titulo__infor__ {
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+       }
+   }
+   
+   @media (max-width: 574px) {
+       .infor__contenedores {
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+       }
+       .titulo__infor {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+       .titulo__infor__ {
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+       }
+   }
+   /*-----------------------------------------fin cuadritos infor--------------------------------------------------- */
+   /*-----------------------------------------carrousel chico--------------------------------------------------- */
+   
+   .carrou__container__e {
+       min-height: 80vh;
+       background-color: rgba(246, 247, 249, 255);
+       margin: 0px;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       justify-content: center;
+   }
+   
+   .carousel__e {
+       max-width: 1400px;
+       margin: auto;
+       padding: 0 20px;
+   }
+   
+   .titulo__carrous__ {
+       color: #1F487E;
+       letter-spacing: 0px;
+       text-transform: none;
+       font-weight: 800;
+       padding-top: 10px;
+       margin: 0;
+       text-align: center;
+   }
+   
+   .carousel__e .card__e {
+       width: 250px;
+       height: 250px;
+       color: #fff;
+       text-align: center;
+       margin: 20px 0;
+       border-radius: 10px;
+       box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.8);
+       background: #fff;
+       overflow: hidden;
+       position: relative;
+   }
+   
+   .carousel__e .card__e .img__categorias {
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 100000;
+       border-radius: 10px;
+       overflow: hidden;
+       width: 100%;
+       height: 100%;
+       transition: 0.2s;
+       transform-origin: top;
+   }
+   
+   .carousel__e:hover .card__e {
+       /* transform: translateY(10px) scale(0.6) */
+       background-color: #000;
+   }
+   
+   .carousel__e .card__e:hover .img__categorias {
+       /* transform: translateY(10px) scale(0.6) */
+       opacity: 0.4;
+   }
+   
+   .carousel__e .card__e:hover .btn__categoria__letra {
+       /* transform: translateY(10px) scale(0.6)  */
+       transform: translateY(150px);
+       transition-delay: 0.10s;
+       opacity: 1;
+       cursor: pointer;
+       text-align: center;
+   }
+   
+   .carousel__e .card__e .img__categorias img {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+   
+   .btn__categoria__letra {
+       width: 150px;
+       height: 35px;
+       font-size: 17px;
+       color: rgb(0, 0, 0);
+       border-color: black;
+       background-color: rgb(255, 255, 255);
+       display: inline-block;
+       border-radius: 4px;
+       text-decoration: none;
+       font-weight: 600;
+       transform: translateY(220px);
+       transition: 0.5s;
+       opacity: 0;
+   }
+   
+   .owl-dots {
+       text-align: center;
+       margin-top: 40px;
+       margin-bottom: 40px;
+       padding-bottom: 40px;
+   }
+   
+   .owl-dot {
+       height: 10px;
+       width: 15px;
+       margin: 0 5px;
+       outline: none;
+       border-radius: 14px;
+       border: 2px solid #0072bc!important;
+       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+       transition: all 0.3s ease;
+   }
+   
+   .owl-dot.active,
+   .owl-dot:hover {
+       background: #0072bc!important;
+   }
+   
+   @media (max-width: 674px) {
+       .titulo__carrous__ {
+           font-size: 20px;
+           letter-spacing: 0px;
+           text-transform: none;
+       }
+   }
+   
+   @media (max-width: 874px) {
+       .titulo__carrous__ {
+           font-size: 20px;
+           letter-spacing: 0px;
+           text-transform: none;
+       }
+   }
+   /*-----------------------------------------fin carrousel chico--------------------------------------------------- */

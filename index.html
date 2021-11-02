@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="favicon.png">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Local CSS  -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/inicio.css">
+
+    <title>CEF-MEDICAL - Cirugía estética financiada.</title>
+
+</head>
+
+<body>
+    <!----------------------------------------Navbar---------------------------->
+    <header>
+        <nav class="nav__bar">
+            <div class="con__tent">
+                <div class="logo">
+                    <a href="index.html"><img src="img/LogoPNG.png" alt="CEF Medical" width="220px"></a>
+
+                </div>
+
+                <ul class="menu__list">
+                    <div class="icon cancel-btn">
+                        <i class="uil uil-multiply"></i>
+                    </div>
+                    <li><a href="preCredito.html">Créditos</a></li>
+                    <li><a href="redPrestadores.html">Prestadores</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="pacientes.html">Pacientes</a></li>
+
+                    <!-- <li><a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Suscribite</a></li> -->
+                </ul>
+
+                <div class="btn-group" role="group" aria-label="Basic outlined example" id="botones">
+                </div>
+
+                <div class="icon menu-btn">
+                    <i class="uil uil-bars"></i>
+
+
+                </div>
+            </div>
+
+
+        </nav>
+
+    </header>
+     <!---------------------------------------- Comienza  el ModaL Login ---------------------------->
+
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">         
+                    <h5 class="modal-title text-center mb-5 fw-light fs-5 " id="exampleModalLabel">Iniciar sesión</h5>
+                </div>
+                <div class="modal-body">
+                    <form id="signup-form">
+                        
+                        <div class="form-group">
+                            <input type="text" id="signup-email" class="form-control" placeholder="Correo electrónico" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" id="signup-password" class="form-control" placeholder="Contraseña"
+                                required>
+                        </div>
+                            <!-- Sign in con email normal -->
+                       <!--  <div class="form-check mb-3">
+                         <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                         <label class="form-check-label" for="rememberPasswordCheck">
+                              Remember password
+                         </label>
+                         </div>
+                         <div class="d-grid">
+                            <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                              in</button>
+                          </div> -->
+
+                          <hr class="my-4">
+                          
+                          <div class="d-grid mb-2">
+                            <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                              <i class="fab fa-google me-2"></i> Iniciar sesión con Google
+                            </button>
+                          </div>
+
+                          <div class="d-grid mb-2">
+                            <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
+                              <i class="fab fa-facebook-f me-2"></i> Iniciar sesión con Facebook
+                            </button>
+                          </div>
+                          <hr class="my-4">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------Termina el Modal Login---------------------------->
+    <!----------------------------------------termina el navbar---------------------------->
+
+    <!----------------------------------------Inicio Carousel Principal------------------------------>
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicadores -->
+
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Diapositivas -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Primera imágen de fondo. -->
+                <div class="fill" style="background-image:url('img/carousel-1comp.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated fadeInLeft">La salud es más fácil con CEF.</h2>
+                    <p class="animated fadeInUp">Invertí en tu salud, ¡ahora!</p>
+                    <p class="animated fadeInUp"><a href="#info-creditos" class="btn btn-transparent btn-rounded btn-large">Cómo funciona</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Segunda imágen de fondo. -->
+                <div class="fill" style="background-image:url('img/carousel-2comp.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated fadeInDown">Belleza, salud y bienestar es posible con CEF</h2>
+                    <p class="animated fadeInUp">Podes financiar hasta en 12 cuotas, ¿qué esperas?</p>
+                    <p class="animated fadeInUp"><a href="#carousel_chico" class="btn btn-transparent btn-rounded btn-large">Cómo funciona</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Tercera imágen de fondo. -->
+                <div class="fill" style="background-image:url('img/carousel-3comp.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated fadeInRight">En el momento preciso cuando lo necesites.</h2>
+                    <p class="animated fadeInRight">Tenemos una atención personalizada 24/7.</p>
+                    <p class="animated fadeInRight"><a href="redPrestadores.html" class="btn btn-transparent btn-rounded btn-large">Cómo funciona</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles (prev,next) -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </div>
+    <!----------------------------------------FIN Carousel Principal------------------------------>
+    <!----------------- Return to Top ----------------------------------------------------------------------------->
+    <a href="javascript:" id="return-to-top"><i class="uil uil-arrow-up"></i></a>
+    <!----------------- Return to Top ----------------------------------------------------------------------------->
+
+
+    <!----------------------------------------Cuadritos informacion-------------------------------------------->
+
+    <section class="carrou__container" id="info-creditos">
+        <div class="titulo__infor">
+            <h1 class="scroll-content fadeTop"> Elige pagar con CEF</h1>
+            <h1> <span>100%</span> digital, <span>100%</span> fácil.</h1>
+        </div>
+        <div class="infor__contenedores scroll-content fadeTop">
+            <div class="box__carrou">
+                <div class="carrousel__elemento">
+                    <h3 class="min__title_">intereses</h3>
+                    <h3 class="min__title">bajos</h3>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+
+            <div class="box__carrou">
+                <div class="carrousel__elemento">
+                    <h3 class="min__title_">créditos</h3>
+                    <h3 class="min__title">inmediatos</h3>
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+            </div>
+
+            <div class="box__carrou">
+                <div class="carrousel__elemento">
+                    <h3 class="min__title_">sin</h3>
+                    <h3 class="min__title">complicaciones</h3>
+                    <i class="fas fa-people-arrows"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo__infor__ scroll-content fadeTop">
+            <div class="scroll-content fadeTop">
+                <p>Sólo necesitas tu DNI y tu WhatsApp. Recuerda leer nuestros <a href="terminosCondi.html">Términos y condiciones</a>.
+                </p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!----------------------------------------Fin Cuadritos informacion-------------------------------------------->
+    <!----------------- Return to Top ----------------------------------------------------------------------------->
+    <a href="javascript:" id="return-to-top"><i class="uil uil-arrow-up"></i></a>
+    <!----------------- Return to Top ----------------------------------------------------------------------------->
+    <!----------------------------------------INICIO de carrousel chico-------------------------------------------->
+
+    <section class="carrou__container__e" id="carousel_chico">
+        <div class="titulo__carrous scroll-content fadeTop">
+            <h1 class="titulo__carrous__"> Red de Prestadores </h1>
+
+        </div>
+        <div class="carousel__e owl-carousel scroll-content fadeTop">
+            <div class="card__e primera__categoria">
+                <a class="btn__categoria__letra">
+                    Médicos
+                </a>
+                <div class="img__categorias">
+                    <a href="redPrestadores.html#cirujanos" target="blank_"><img src="img/medicoscomprimida.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="card__e primera__categoria">
+                <a class="btn__categoria__letra">
+                    Farmacias
+                </a>
+                <div class="img__categorias">
+                    <a href="redPrestadores.html#farmacia"><img src="img/farmaciascomprimida.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="card__e primera__categoria">
+                <a class="btn__categoria__letra">
+                    Odontólogos
+                </a>
+                <div class="img__categorias">
+                    <a href="redPrestadores.html#odontologos"><img src="img/odontologoscomprimida.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="card__e primera__categoria">
+                <a class="btn__categoria__letra">
+                    Bienestar
+                </a>
+                <div class="img__categorias">
+                    <a href="redPrestadores.html#spa"><img src="img/bienestarcomprimida.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="card__e primera__categoria">
+                <a class="btn__categoria__letra">
+                    Laboratorios
+                </a>
+                <div class="img__categorias">
+                    <a href="redPrestadores.html#laboratorio"><img src="img/laboratoriocomprimida.jpg" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!----------------------------------------fin de carrousel chico-------------------------------------------->
+
+
+
+
+    <!----------------------------------------Footer------------------------------------------------------------>
+
+    <footer>
+        <div class="foot__container">
+            <div class="sec aboutus">
+                <h2>Sobre nosotros</h2>
+                <p>Hacemos algo muy simple en CEFMedical, ayudamos a las personas a obtener la atencion que desean para ellos y sus familias.</p>
+                <ul class="sci">
+                    <li><a href="https://www.instagram.com/cefmedical.tuc/" target="_blank"><i class="uil uil-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/cefmedical" target="_blank"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCEE8iRrz7EdqSGSLS-_x6hg" target="_blank"><i class="uil uil-youtube"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sec links">
+                <h2>Faq</h2>
+                <ul class="link__">
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="redPrestadores.html" target="_blank">Prestadores</a></li>
+                    <li><a href="preCredito.html" target="_blank">Credito</a></li>
+                    <li><a href="pacientes.html" target="_blank">Pacientes</a></li>
+                    <li><a href="terminosCondi.html" target="_blank">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <ul class="info__ul">
+                    <li>
+                        <span><i class="uil uil-map"></i></span>
+                        <span><a href="https://goo.gl/maps/ZuSGvpbA8kfq1vLE6" target="_blank">Monteagudo 408</a></span>
+                    </li>
+                    <li>
+                        <span><i class="uil uil-phone-alt"></i></span>
+                        <p><a href="tel:3813571422">3813571422</a></p>
+                    </li>
+                    <li>
+                        <span><i class="uil uil-envelope-minus"></i></span>
+                        <p><a href="mailto:Cefmedical@gmail.com" target="_blank">Cefmedical@gmail.com</a></p>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!----------------------------------------Fin Footer------------------------------------------------------------>
+
+    <!--SCRIPTS-->
+    <script src="JS/main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="https://kit.fontawesome.com/b0b6e5439e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.infor__contenedores__nav {
+    min-height: 15vh;
+    background-color: #ffffff;
+}
+
+.container_terminos {
+    min-height: 710vh;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+}
+
+.parrafo__infor {
+    font-size: 17px;
+}
+
+.subtitulo__infor {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.titulo__infor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    margin-bottom: 35px;
+    font-size: 45px;
+    font-weight: 550;
+}
